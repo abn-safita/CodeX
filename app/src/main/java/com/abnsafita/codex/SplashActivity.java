@@ -102,7 +102,7 @@ public class SplashActivity extends AppCompatActivity {
 	
 	
 	public void _Animator(final View _view, final String _propertyName, final double _value, final double _duration) {
-		// this is for making animation //
+		// هذه الدالة للمؤثرات الحركية //
 		ObjectAnimator anim = new ObjectAnimator();
 		anim.setTarget(_view);
 		anim.setPropertyName(_propertyName);
