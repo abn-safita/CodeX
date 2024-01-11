@@ -492,12 +492,10 @@ public class MainActivity extends AppCompatActivity {
 			    ClipData.Item item = clipboard.getPrimaryClip().getItemAt(0);
 			    String clipboardText = item.getText().toString();
 			
-			    // Clipboard se liye gaye text ko string variable me paste kare
+			    
 			    String text = clipboardText;
 			
-			    // Paste kiya gaya text ka upyog kare
-			    // Example: Toast message dikhane ke liye
-			    String pasteText = "تم ✓";
+                            String pasteText = "تم ✓";
 			    Toast.makeText(getApplicationContext(), pasteText, Toast.LENGTH_SHORT).show();
 			    edittext1.setText(text);
 		}
@@ -699,7 +697,7 @@ public class MainActivity extends AppCompatActivity {
 	private Map<String, Character> createReverseMorseCodeMap() {
     Map<String, Character> reverseMorseCodeMap = new HashMap<>();
 
-    // Define Morse code mappings
+    
     Map<Character, String> morseCodeMap = createMorseCodeMap();
     for (Map.Entry<Character, String> entry : morseCodeMap.entrySet()) {
         reverseMorseCodeMap.put(entry.getValue(), entry.getKey());
@@ -711,7 +709,7 @@ public class MainActivity extends AppCompatActivity {
 private Map<Character, String> createMorseCodeMap() {
 	    Map<Character, String> morseCodeMap = new HashMap<>();
 	    
-	    // Define Morse code mappings
+	    
     morseCodeMap.put('A', ".-");
     morseCodeMap.put('B', "-...");
     morseCodeMap.put('C', "-.-.");
@@ -756,8 +754,9 @@ private Map<Character, String> createMorseCodeMap() {
     
 
     
-	    // ... and so on for other characters
-	    
+	
+
+
 	    return morseCodeMap;
 	}
 	
