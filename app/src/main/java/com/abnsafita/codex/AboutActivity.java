@@ -185,7 +185,7 @@ public class AboutActivity extends AppCompatActivity {
 	
 	
 	public void _Rounded(final ImageView _img, final double _d) {
-		//Bad Devil
+		//Programmed By Abn#Safita
 		Bitmap bm = ((android.graphics.drawable.BitmapDrawable)_img.getDrawable()).getBitmap();
 		
 		Double D = _d;
